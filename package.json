@@ -1,0 +1,11 @@
+{
+  "name": "nodebackend",
+  "version": "1.0.0",
+  "description": "learning and creating nodejs backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parinay Nakhate",
+  "license": "ISC"
+}
