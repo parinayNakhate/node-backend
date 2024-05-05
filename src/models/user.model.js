@@ -50,7 +50,7 @@ const userSchema =new Schema({ // Creating a new mongoose Schema for User model.
 userSchema.pre("save", async function(next){ // Middleware function executed before saving a user document.
     if(!this.isModified("password")) return next(); // If password is not modified, skip hashing.
 
-    this.password = bcrypt.hash(this.password,10) // Hash the password using bcrypt with a salt round of 10.
+    this.password = await bcrypt.hash(this.password,10) // Hash the password using bcrypt with a salt round of 10.
     next() // Proceed to the next middleware.
     
 })
